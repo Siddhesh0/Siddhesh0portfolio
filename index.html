@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa fa-times"></i>
+            </ul>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </nav>
+        <div class="header-text">
+            <p>Welcome to my Portfolio</p>
+            <h1>Hi, I'm <span>Siddhesh</span> Gavare<br> From India</h1>
+        </div>
+        </div>
+    </div>
+    <!---------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/male.icon.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello my name is Siddhesh Gavare. I'm from Pune Maharashtra. I'm a student, currently pursuing 
+                        my bachelors degree in Electronics and Telecommunication engineering. I am quite good at Python Programming.
+                        I would like to work with a company with great passion which enhances my knowledge,
+                        potential and excel in innovate project designs and developments and to be a part of organization where 
+                        I can devote myself and joyfully give out the best of my skills to become its strong asset.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('internship')">Internship</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Language</span><br>Python</li>
+                                <li><span>Object Oriented Programming</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="internship">
+                            <ul>
+                                <li><span>Internship</span><br>ENERGYBAE PRIVATE LTD CHINCHWAD, Pune<br>28 Jan, 2023 - 28 Mar, 2023
+                                </li>  
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>SSC</span><br>ROSARY ENGLISH SCHOOL, MALVAN <br> Year:2018
+                                <br>Percentage:88%</li>
+                                <li><span>HSC</span><br>DR. VITTHALRAO VIKHE PATIL SAINIK SCHOOL , LONI, AHMADNAGAAR <br> Year:2020<br>
+                                Percentage:60.11%</li>
+                                <li><span>BE-E&TC</span><br>Dr. D. Y. Patil Institute of Technology<br>Year:2020-2024
+                                <br>Aggregate CGPA:8.0/10</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------portfolio-------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <p>(Hover over images)</p>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/blind.stick.jpeg">
+                    <div class="layer">
+                        <h3>Object Detection USING SMART BLIND STICK</h3>
+                        <p>Vision is the most important part of human body people. Creating an intelligent blind stick for 
+                            blind people involves incorporating various technologies to enhance the user's mobility and safety. 
+                            When designing an intelligent blind stick, it's essential to involve potential users in the development process 
+                            to ensure that the device meets their specific needs and preferences. Additionally, considering the accessibility 
+                            of the interface and the ease of use is crucial for the success of such a device.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/helmet.jpg">
+                    <div class="layer">
+                        <h3>INTELLIGENT HELMET FOR COAL MINERS</h3>
+                        <p>An intelligent helmet for coal miners can significantly enhance safety and efficiency in mining operations.
+                            To mitigate the risks of collisions and accidents, the helmet incorporates a collision avoidance system, 
+                            employing proximity sensors or cameras to detect obstacles.The helmet is resistant to dust, water, and impact, 
+                            ensuring longevity and reliable performance.In summary, the intelligent helmet for coal miners represents a holistic
+                            approach to safety and efficiency in mining operations.
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/captionn.png">
+                    <div class="layer">
+                        <h3> IMAGE CAPTION GENERATION USING DEEP LEARNING</h3>
+                        <p>
+                            Image caption generation using deep learning is a fascinating application that combines computer vision and natural language 
+                            processing to provide descriptive captions for images.At the heart of this process is a trained CNN, which analyzes the visual 
+                            content of an image and extracts high-level features that capture its key characteristics.In conclusion, image caption generation 
+                            using deep learning represents a powerful synergy between computer vision and natural language processing. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>s.m.gavare6211@gmail.com</p>
+                
+                <div class="social-icons">
+                    <a href="www.linkedin.com/in/siddhesh-gavare-8347b4202"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Siddhesh Resume2 (1).pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Siddhesh Gavare</p>
+    </div>
+</div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    </body>
+</html>
